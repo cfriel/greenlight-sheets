@@ -1,0 +1,9 @@
+{
+	"name": "greenlight sheets",
+	"description": "Greenlight sheets site template",
+	"homepage": "https://github.com/cfriel/greenlight-sheets",
+	"author": "cfriel",
+	"version": "0.1.0",
+	"git": "https://github.com/cfriel/greenlight-sheets.git",
+	"packages": {}
+}
