@@ -208,12 +208,63 @@ body {
     background: #fefefe;
 }
 
+#query
+{
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 200px;
+    overflow: hidden;
+    margin: 20px;
+    margin-left: 40px;
+    margin-right: 40px;
+    border: 1px solid #eeeeee;
+}
+
+#tools
+{
+    margin: 20px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
 
 .slick-cell.l0.r0 {
     background-color: #ededed;
     font-weight: bold;
 }
 
+.CodeMirror {
+    height: 200px;
+}
+
+#query-time
+{
+    font-weight: bold;		
+}
+
+#query-size
+{
+    font-weight: bold;
+}
+
+#tools
+{
+    
+}
+
+#tools .query-info
+{
+    
+}
+
+#tools .query-actions
+{
+    width: 295px;
+    clear: both;
+    float: right;
+}
 
 button.g-button, a.g-button, input[type=submit].g-button 
 {
