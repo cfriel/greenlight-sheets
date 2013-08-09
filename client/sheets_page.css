@@ -4,8 +4,8 @@
     border-top: 0;
     background: url('../images/header-bg.gif') repeat-x center top;
     color: black;
-    height: 24px;
-    line-height: 24px;
+    height: 30px;
+    line-height: 30px;
 }
 
 .grid-header label {
@@ -184,18 +184,8 @@ input.editor-checkbox {
     border: 0;
 }
 
-html, body {
-    margin: 0;
-    padding: 0;
-    background-color: White;
-    overflow: auto;
-}
-
-body {
-    font: 11px Helvetica, Arial, sans-serif;
-}
-
-#container {
+#container 
+{
     position: relative;
     top: 0;
     left: 0;
@@ -208,12 +198,10 @@ body {
     background: #fefefe;
 }
 
-
 .slick-cell.l0.r0 {
     background-color: #ededed;
     font-weight: bold;
 }
-
 
 button.g-button, a.g-button, input[type=submit].g-button 
 {
@@ -316,4 +304,9 @@ option.g-select, a.g-select, input[type=submit].g-select
 
 #navbar ul li:hover {
     
+}
+
+#slick-container .sheets-container
+{
+    margin-top: -13px;
 }

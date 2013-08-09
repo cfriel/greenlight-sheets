@@ -12,7 +12,6 @@ Template.sheets_page.rendered = function()
     };
     
     var grid = new Slick.Grid("#slick-container", data, columns, options);
-    $('#query-info').html('Query running')
 
     grid.setData({});
     
