@@ -14,12 +14,12 @@ sheets.prototype.metadata = function()
 }();
 
 
-Greenlight.Sheets = sheets.prototype;
+Greenlight.Packages.Sheets = sheets.prototype;
 
 Meteor.startup(function(){
     
     console.log("loading sheets package");
     
-    Greenlight.register_template(name, version, Greenlight.Sheets);
+    Greenlight.register_template(name, version, Greenlight.Packages.Sheets);
 
 });
