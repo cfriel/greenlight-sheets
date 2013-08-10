@@ -31,3 +31,8 @@ Template.sheets_page.rendered = function()
 {
     
 };
+
+Template.sheets_page.root = function()
+{
+    return "/sheets";
+};
