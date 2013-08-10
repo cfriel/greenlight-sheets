@@ -5,7 +5,7 @@ Deps.autorun(function(){
     
     var datasetName = Session.get("sheets_dataset");
 
-    var dataset = Greenlight.Dataset.Datasets.findOne({name: datasetName});
+    var dataset = Greenlight.Datasets.findOne({name: datasetName});
 
     if(dataset != undefined)
     {
