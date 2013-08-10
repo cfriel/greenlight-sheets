@@ -306,7 +306,7 @@ option.g-select, a.g-select, input[type=submit].g-select
     
 }
 
-#slick-container .sheets-container
+#sheets-container
 {
-    margin-top: -13px;
+    margin-top: -20px;
 }

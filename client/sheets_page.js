@@ -8,10 +8,11 @@ Template.sheets_page.rendered = function()
 	enableColumnReorder: false,
 	rowHeight: 30,
 	editable: false,
-	autoEdit: true
+	autoEdit: true,
+	forceFitColumns: true
     };
     
-    var grid = new Slick.Grid("#slick-container", data, columns, options);
+    var grid = new Slick.Grid("#sheets-container", data, columns, options);
 
     grid.setData({});
     
@@ -35,10 +36,10 @@ Template.sheets_page.rendered = function()
 					
 					for(var i = 0; i < keys.length; i++)
 					{
-					    columns[i] = { id: keys[i], name: keys[i], field: keys[i], width: 120, editor: Slick.Editors.Text, sortable: true };
+					    columns[i] = { id: keys[i], name: keys[i], field: keys[i], minWidth: 120, editor: Slick.Editors.Text, sortable: true };
 					}
 					
-					grid = new Slick.Grid("#slick-container", data, columns, options);
+					grid = new Slick.Grid("#sheets-container", data, columns, options);
 
 					grid.onSort.subscribe(function(e, args){ // args: sort information. 
 					    var field = args.sortCol.field;
@@ -61,11 +62,11 @@ Template.sheets_page.rendered = function()
 		    });
     }
 
-    $('#slick-container').height($(window).height() - 65);
+    $('#sheets-container').height($(window).height() - 70);
 
     $(window).resize(function() {
-	$('#slick-container').height($(window).height() -65);
-	$(".slick-viewport").height($("#slick-container").height() + 65);
+	$('#sheets-container').height($(window).height() - 70);
+	$(".slick-viewport").height($("#sheets-container").height() - 35);
     });
     
     
