@@ -23,11 +23,8 @@ Deps.autorun(function(){
 	    columns[i] = { id: keys[i], name: keys[i], field: keys[i], minWidth: 120, editor: Slick.Editors.Text, sortable: true };
 	}
 	
-	var grid = Greenlight.Helpers.create_slickgrid("#sheets-container", data, columns);
-	
+	var grid = Greenlight.Helpers.create_slickgrid("#sheets-container", data, columns);	
     }
-
-
 });
 
 Template.sheets_page.rendered = function() 
