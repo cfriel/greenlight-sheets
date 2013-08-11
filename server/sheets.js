@@ -20,6 +20,6 @@ Meteor.startup(function(){
     
     console.log("loading sheets package");
     
-    Greenlight.register_template(name, version, Greenlight.Packages.Sheets);
+    Greenlight.register_package(name, version, Greenlight.Packages.Sheets);
 
 });
