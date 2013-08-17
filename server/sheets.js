@@ -18,7 +18,7 @@ Greenlight.Packages.Sheets = sheets.prototype;
 
 Meteor.startup(function(){
     
-    console.log("loading sheets package");
+    Greenlight.log("loading sheets package");
     
     Greenlight.register_package(name, version, Greenlight.Packages.Sheets);
 
